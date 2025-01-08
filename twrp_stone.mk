@@ -19,6 +19,9 @@ DEVICE_PATH := device/xiaomi/stone
 # Inherit from device.mk configuration
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
+# N
+$(call inherit-product, vendor/twrp/config/common.mk)
+
 # Release name
 PRODUCT_RELEASE_NAME := stone
 
