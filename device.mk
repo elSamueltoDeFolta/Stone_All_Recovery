@@ -30,13 +30,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Configure twrp
-$(call inherit-product, vendor/twrp/config/common.mk)
-
-# Configure pb
 $(call inherit-product, vendor/pb/config/common.mk)
-
-# Configure shrp
-$(call inherit-product, vendor/shrp/config/common.mk)
 
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
