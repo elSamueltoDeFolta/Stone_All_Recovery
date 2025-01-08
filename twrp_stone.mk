@@ -20,13 +20,13 @@ DEVICE_PATH := device/xiaomi/stone
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
 # N
-$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := stone
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := stone
-PRODUCT_NAME := twrp_stone
+PRODUCT_NAME := pb_stone
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
