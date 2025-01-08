@@ -205,7 +205,8 @@ SHRP_AB := true
 PB_DISABLE_DEFAULT_DM_VERITY := true
 PB_DISABLE_DEFAULT_PATCH_AVB2 := true
 PB_DISABLE_DEFAULT_TREBLE_COMP := true
-PB_MAINTAINER := VictoriaVDeFalsa V1
+PB_TORCH_PATH := "//sys/class/leds/vibrator/brightness"
+PB_TORCH_MAX_BRIGHTNESS := 1
 
 # screen settings
 OF_SCREEN_H := 2400
