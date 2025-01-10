@@ -32,3 +32,9 @@
 # Removable storage
 /usb_otg               auto    /dev/block/sdg1                            /dev/block/sdg          flags=fsflags=utf8;display="USB-OTG";storage;wipeingui;removable
 /external_sd           auto    /dev/block/mmcblk1p1                                               flags=display="MicroSD";storage;wipeingui;removable
+
+#Flashable logical partitions Emmc
+/product_a          emmc      /dev/block/mapper/product_a                                   flags=display="Product Image";backup=1;resize=1;flashimg=1;wipeingui;removable
+/system_a           emmc      /dev/block/mapper/system_a                                    flags=display="System Image";backup=1;resize=1;flashimg=1;wipeingui;removable
+/system_ext_a       emmc      /dev/block/mapper/system_ext_a                                flags=display="System_EXT Image";backup=1;resize=1;flashimg=1;wipeingui;removable
+/vendor_a           emmc      /dev/block/mapper/vendor_a                                    flags=display="Vendor Image";backup=1;resize=1;flashimg=1;wipeingui;removable
