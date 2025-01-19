@@ -15,5 +15,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_stone.mk
+    $(LOCAL_DIR)/pb_stone.mk
     
